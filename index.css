@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Da 2', Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+.no-show {
+  display: none;
+}
+
+main {
+  min-height: 700px;
+}
+
+.whatsapp-contact {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #0071e3;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-contact-a {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .whatsapp-contact-a {
+    font-size: 14px;
+  }
+}
+
+.whatsapp-contact-a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    justify-content: space-between;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .logo-div {
+    margin-right: 10px;
+  }
+}
+
+.logo-div img {
+  object-fit: cover;
+  height: 55px;
+}
+
+.logo-text {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-div img {
+    height: 30px;
+  }
+  .logo-text {
+    font-size: 25px;
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container nav ul li {
+  margin-right: 25px;
+}
+
+.nav-container nav ul li a:hover {
+  color: #0071e3;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-container nav ul li {
+    margin-right: 15px;
+  }
+}
+
+.nav-icon {
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+.nav-icon img {
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+}
+
+.nav-close {
+  display: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.nav-close img {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-close {
+    display: flex;
+  }
+  .nav-container {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #94b7ce;
+    align-items: flex-start;
+    transition: top 0.3s;
+  }
+  .nav-container nav ul {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .nav-container nav ul li {
+    margin: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.banner {
+  width: 100%;
+  background-color: #22303a;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+}
+
+.banner * {
+  margin: 15px;
+  min-width: 400px;
+}
+
+.banner-description {
+  width: 50%;
+}
+
+.banner__title,
+.banner__information,
+.banner__button button {
+  color: white;
+}
+
+.banner__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__button button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 50%;
+}
+
+.banner__button button:hover {
+  background-color: #0071e3;
+}
+
+@media screen and (max-width: 600px) {
+  .banner__title h1 {
+    font-size: 25px;
+  }
+  .banner__information p {
+    font-size: 15px;
+  }
+  .banner__button button {
+    font-size: 18px;
+  }
+}
+
+.banner-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.banner-picture img {
+  object-fit: cover;
+  height: 300px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .banner-picture img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner * {
+    width: 100%;
+    min-width: 0;
+    margin: 5px;
+  }
+}
+
+.items {
+  width: 100%;
+}
+
+.items-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.item {
+  width: 20%;
+  min-width: 250px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item div img {
+  object-fit: cover;
+  height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .item div img {
+    height: 80px;
+  }
+}
+
+.item h3,
+.item p {
+  text-align: center;
+}
+
+.item p {
+  font-size: 14px;
+}
+
+.item * {
+  margin: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .item * {
+    margin: 3px;
+  }
+  .item {
+    margin: 8px;
+  }
+  .items-title {
+    padding: 10px 5px 5px 5px;
+  }
+}
+
+footer {
+  background-color: #161f25;
+  width: 100%;
+  height: 100px;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.contact-div * {
+  width: 50%;
+  margin: 15px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.contact-div textarea {
+  height: 150px;
+}
+
+.contact-div button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 15px;
+}
+
+.contact-div button:hover {
+  background-color: #a4adb6;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-div * {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-div * {
+    font-size: 15px;
+  }
+  .contact-div {
+    padding: 15px;
+  }
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  min-width: 250px;
+  /* Set a default minimum width */
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: #333;
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 2px;
+  /* Rounded borders */
+  padding: 16px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  bottom: 30px;
+  /* 30px from the bottom */
+  font-size: 1.5rem;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

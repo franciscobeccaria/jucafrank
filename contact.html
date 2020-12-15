@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Jucafrank</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-div">
+                <img src="jucafrank-logo.png" alt="Jucafrank logo">
+            </div>
+            <div class="logo-text"><a href="index.html">Jucafrank</a></div>
+        </div>
+        <div id="nav-icon" class="nav-icon"><img src="menu.png" alt="menu"></div>
+        <div id="nav-container" class="nav-container">
+            <div id="nav-close" class="nav-close"><img src="close.png" alt="close"></div>
+            <nav>
+                <ul>
+                    <li class="no-show"><a href="index.html">Inicio</a></li>
+                    <li class="no-show"><a href="#">Seguridad</a></li>
+                    <li class="no-show"><a href="#">Adiestramiento</a></li>
+                    <li class="no-show"><a href="#">Cursos</a></li>
+                    <li class="no-show"><a href="#">Guardería</a></li>
+                    <li class="no-show"><a href="#">Venta</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <span class="whatsapp-contact">
+            <a class="whatsapp-contact-a" href="https://wa.link/h9elj7" target="_blank"><p>Contactarse mediante <strong> WhatsApp ></strong></p></a>
+        </span>
+        <div class="contact-div">
+            <input id="contact-name" type="text" placeholder="Nombre">
+            <input id="contact-email" type="text" placeholder="Email">
+            <input id="contact-topic" type="text" placeholder="Tema (Opcional)">
+            <textarea id="contact-message" type="text" placeholder="Mensaje"></textarea>
+            <button id="contact-send">Enviar</button>
+        </div>
+    </main>
+    <footer></footer>
+    <div id="snackbar">Some text some message..</div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
